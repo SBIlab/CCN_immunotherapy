@@ -9,7 +9,7 @@ This is source code for constructing cell-cell communication networks using pati
 
 2. response prediction using CCN
 
-## 
+## Usage
 1. Construction of cell-cell communication networks
 input: cell type-specific gene expression profiles
 
