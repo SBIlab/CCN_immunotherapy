@@ -19,15 +19,15 @@ qval = 0.05
 
 ## load data
 perf_list, result_list = [], []
-geneset_name, geneset = load_controlGeneset()
+# geneset_name, geneset = load_controlGeneset()
 
 CCN = load_CCN(dataset, gene_num=gene_num, p_cut_off=qval, standardize="StandardScaler", NetworkSelection=True)
 clinical = nonres_res_partition(dataset).loc[list(CCN.index), :]
-bulkseq_data = load_BulkTranscriptome(dataset, gene_num, qval).loc[ list(CCN.index), :]
+# bulkseq_data = load_BulkTranscriptome(dataset, gene_num, qval).loc[ list(CCN.index), :]
 
-edf = load_BulkTranscriptome(dataset, gene_num=gene_num, qval=qval, NetworkSelection=False, standardize="StandardScaler")
+# edf = load_BulkTranscriptome(dataset, gene_num=gene_num, qval=qval, NetworkSelection=False, standardize="StandardScaler")
 
-cellprop = pd.DataFrame( load_celltypeProportion(dataset, celltype=None, standardize="StandardScaler") ).loc[list(CCN.index), :]
+# cellprop = pd.DataFrame( load_celltypeProportion(dataset, celltype=None, standardize="StandardScaler") ).loc[list(CCN.index), :]
 
 
 
@@ -36,6 +36,7 @@ CCN_perf, CCN_result, CCN_weight = Leaveoneout_CV(CCN, list(clinical["response"]
 perf_list.append(CCN_perf)
 result_list.append(CCN_result)
 
+'''
 bulk_perf, bulk_result, _ = Leaveoneout_CV(bulkseq_data, list(clinical["response"]), feature_name="bulkCommgenesNet", ML="LogisticRegression")
 perf_list.append(bulk_perf)
 result_list.append(bulk_result)
@@ -51,7 +52,7 @@ for name, control_geneset in zip(geneset_name, geneset):
 cellprop_perf, cellprop_result, _ = Leaveoneout_CV(cellprop, list(clinical["response"]), feature_name="cellprop", ML="LogisticRegression")
 perf_list.append(cellprop_perf)
 result_list.append(cellprop_result)
-
+'''
 
 ## result 
 perf = pd.concat(perf_list, axis=0)
