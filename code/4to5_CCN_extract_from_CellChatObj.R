@@ -1,11 +1,11 @@
-setwd("/home/ljh621/cell-cell_communication/github_CCN-immunotherapy/code/CCN_construction")
+setwd("working directory")
 library(dplyr)
 library(reticulate)
 source_python("../ML/function/DataLoader.py")
 
 
 ## dataset and output path setting
-dataset = "VanAllen"
+dataset = "Cho"
 input_path = file.path("../../data/CCN_construction/4_Commprob_calculated_CellChatObj", dataset)
 output_path = file.path("../../data/CCN_construction/5_CCN", dataset)
 if(!file.exists(output_path))
