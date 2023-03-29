@@ -1,4 +1,4 @@
-setwd("/home/ljh621/cell-cell_communication/github_CCN-immunotherapy/code/CCN_construction")
+setwd("working directory")
 library(dplyr)
 library(Matrix)
 source("./CellChat-master/R/CellChat_class.R")
