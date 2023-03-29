@@ -28,3 +28,4 @@ This is source code for constructing cell-cell communication networks using pati
 - input: communication strength between cells of each patient (i.e. CCN)
 - To make leave-one-out cross-validation using CCN, run ./code/ML/main.py under the ./code/ML/ directory
 - Results will be stored at ./result/ML/"dataset"/
+- example dataset: Jung et al., 2019, Nat. Commun. 10, 4278.
