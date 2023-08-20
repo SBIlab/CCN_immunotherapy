@@ -4,7 +4,7 @@ import glob
 import os
 import itertools
 exec(open("./function/DataLoader.py").read())
-exec(open("./function/Control_DataLoader.py").read())
+# exec(open("./function/Control_DataLoader.py").read())
 exec(open("./function/ML.py").read())
 
 ## options
