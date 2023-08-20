@@ -31,7 +31,7 @@ This is source code for constructing cell-cell communication networks using pati
 - CCN will be stored under ./data/CCN_construction/5_CCN/"dataset"/
 - running example:
   
-      cd code/CCN_construction
+      cd CCN_immunotherapy/code/CCN_construction
       
       # preprocessing cell type-specific gene expression profiles
       Rscript 2to3_Processing_CIBERSORTxOutput_todo_CellChat.R    # results will be stored in 3_processed_celltype_gene_expression
@@ -48,7 +48,7 @@ This is source code for constructing cell-cell communication networks using pati
 - Results will be stored at ./result/ML/"dataset"/
 - running example
 
-      cd code/ML
+      cd CCN_immunotherapy/code/ML
       python main.py
 
 ## Example dataset
