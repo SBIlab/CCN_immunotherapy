@@ -1,4 +1,3 @@
-setwd("working directory")
 library(dplyr)
 library(preprocessCore)
 
