@@ -9,7 +9,7 @@ dataset = "Jung"
 input_path = file.path("../../data/CCN_construction/2_CIBERSORTx_output", dataset)
 output_path = file.path("../../data/CCN_construction/3_processed_celltype_gene_expression", dataset)
 if(!file.exists(output_path))
-    dir.create(output_path)
+    dir.create(output_path, recursive = TRUE)
 
 ## get cell type GEP file names
 celltypeGEP_filename = list.files(input_path, recursive = FALSE, pattern = "^CIBERSORTxHiRes_NA_")
