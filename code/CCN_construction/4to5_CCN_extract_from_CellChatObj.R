@@ -8,7 +8,7 @@ dataset = "Jung"
 input_path = file.path("../../data/CCN_construction/4_Commprob_calculated_CellChatObj", dataset)
 output_path = file.path("../../data/CCN_construction/5_CCN", dataset)
 if(!file.exists(output_path))
-    dir.create(output_path)
+    dir.create(output_path, recursive = TRUE)
 
 message(dataset)
 
