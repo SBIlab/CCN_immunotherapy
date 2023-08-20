@@ -43,9 +43,9 @@ This is source code for constructing cell-cell communication networks using pati
       Rscript 4to5_CCN_extract_from_CellChatObj.R         # results will be stored in 5_CCN
 - output directory and files:
 
-    data/CCN_construction/3_processed_celltype_gene_expression/"dataset"/ -> pre-processed cell type-specific gene expression profiles
-    data/CCN_construction/4_Commprob_calculated_CellChatObj/"dataset"/ -> CellChat object of each sample containing communication probabilities. Saved as "sampleName"_CellChatobj.RData
-    data/CCN_construction/5_CCN/"dataset"/ -> cell-cell communication networks of each sample, divided into responders (responder_CCN.txt) and non-responders (nonresponder_CCN.txt). 
+    - data/CCN_construction/3_processed_celltype_gene_expression/"dataset"/ -> pre-processed cell type-specific gene expression profiles
+    - data/CCN_construction/4_Commprob_calculated_CellChatObj/"dataset"/ -> CellChat object of each sample containing communication probabilities. Saved as "sampleName"_CellChatobj.RData
+    - data/CCN_construction/5_CCN/"dataset"/ -> cell-cell communication networks of each sample, divided into responders (responder_CCN.txt) and non-responders (nonresponder_CCN.txt). 
 
 
 ### 2. Response prediction using CCN
@@ -58,9 +58,9 @@ This is source code for constructing cell-cell communication networks using pati
       python main.py
 - output directory and files:
 
-    result/ML/"dataset"/perf_"dataset".txt -> predictive performances of the CCN-based ML model
-    result/ML/"dataset"/result_"dataset".txt -> predictive probabilities of each sample by CCN-based ML model
-    result/ML/"dataset"/CCNweight_"dataset".txt -> feature weights
+    - result/ML/"dataset"/perf_"dataset".txt -> predictive performances of the CCN-based ML model
+    - result/ML/"dataset"/result_"dataset".txt -> predictive probabilities of each sample by CCN-based ML model
+    - result/ML/"dataset"/CCNweight_"dataset".txt -> feature weights
 
 ## Example dataset
 Jung et al., 2019, Nat. Commun. 10, 4278.
