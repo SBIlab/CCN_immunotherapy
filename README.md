@@ -24,14 +24,12 @@ This is source code for constructing cell-cell communication networks using pati
 
 
 ## Usage with examples
-1. Construction of cell-cell communication networks
+### 1. Construction of cell-cell communication networks
 - **pre-requirement: cell type-specific gene expression profiles should be prepared before running and store under ./data/CCN_construction/2_CIBERSORTx_output/"dataset"/
 - input: cell type-specific gene expression profiles
 - To construct CCN of each patient, run R codes deposited in ./code/CCN_construction (setting working directory at the beginning of each code)
 - CCN will be stored under ./data/CCN_construction/5_CCN/"dataset"/
-
-### Examples
-- example dataset: Jung et al., 2019, Nat. Commun. 10, 4278.
+- running examples: 
   
       cd code/CCN_construction
       
@@ -44,13 +42,13 @@ This is source code for constructing cell-cell communication networks using pati
       # generate patient-specific cell-cell communication networks
       Rscript 4to5_CCN_extract_from_CellChatObj.R         # results will be stored in 5_CCN
 
-2. Response prediction using CCN
+### 2. Response prediction using CCN
 - input: communication strength between cells of each patient (i.e. CCN)
 - To make leave-one-out cross-validation using CCN, run ./code/ML/main.py under the ./code/ML/ directory
 - Results will be stored at ./result/ML/"dataset"/
-
-### Examples
+- running examples
 
     python main.py
-  
 
+## Example dataset
+Jung et al., 2019, Nat. Commun. 10, 4278.
