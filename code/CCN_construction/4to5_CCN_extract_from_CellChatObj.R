@@ -1,4 +1,3 @@
-setwd("working directory")
 library(dplyr)
 library(reticulate)
 source_python("../ML/function/DataLoader.py")
