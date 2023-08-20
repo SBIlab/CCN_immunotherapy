@@ -2,7 +2,7 @@
 ## Description
 This is source code for constructing cell-cell communication networks using patient's bulk tumor transcriptome and prediction of patient response to immune checkpoint inhibitors (ICIs) using the patient's cell-cell communication network (CCN)
 
-## Requirements
+## Packages required
 1. construction of CCN
 - R (v 4.0.2)
 - preprocessCore (v 1.52.1)
@@ -18,14 +18,43 @@ This is source code for constructing cell-cell communication networks using pati
 - sklearn (v. 0.24.2)
 - scipy (v 1.5.2)
 
-## Usage
+## Installation
+
+'''
+git clone https://github.com/SBIlab/CCN_immunotherapy
+'''
+
+## Usage with examples
 1. Construction of cell-cell communication networks
-- input: cell type-specific gene expression profiles (store under ./data/CCN_construction/2_CIBERSORTx_output/"dataset"/)
+- **pre-requirement: cell type-specific gene expression profiles should be prepared before running and store under ./data/CCN_construction/2_CIBERSORTx_output/"dataset"/
+- input: cell type-specific gene expression profiles
 - To construct CCN of each patient, run R codes deposited in ./code/CCN_construction (setting working directory at the beginning of each code)
 - CCN will be stored under ./data/CCN_construction/5_CCN/"dataset"/
+
+# Examples
+- example dataset: Jung et al., 2019, Nat. Commun. 10, 4278.
+ 
+'''
+cd code/CCN_construction
+# preprocessing cell type-specific gene expression profiles
+Rscript 2to3_Processing_CIBERSORTxOutput_todo_CellChat.R    # results will be stored in 3_processed_celltype_gene_expression
+
+# calculate communication strength (i.e. communication probabilities)
+Rscript 3to4_Calculate_commprob_byCellChat.R                # results will be stored in 4_Commprob_calculated_CellChatObj
+
+# generate patient-specific cell-cell communication networks
+Rscript 4to5_CCN_extract_from_CellChatObj.R                 # results will be stored in 5_CCN
+'''
 
 2. Response prediction using CCN
 - input: communication strength between cells of each patient (i.e. CCN)
 - To make leave-one-out cross-validation using CCN, run ./code/ML/main.py under the ./code/ML/ directory
 - Results will be stored at ./result/ML/"dataset"/
-- example dataset: Jung et al., 2019, Nat. Commun. 10, 4278.
+
+# Examples
+
+'''
+python main.py
+'''
+  
+
