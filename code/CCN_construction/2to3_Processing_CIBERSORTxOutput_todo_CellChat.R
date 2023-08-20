@@ -4,7 +4,7 @@ library(preprocessCore)
 
 
 ## dataset to process
-dataset = "Cho"  # VanAllen Liu Gide Hugo Jung Kim Mariathasan PratMelanoma Cho
+dataset = "Jung"  # VanAllen Liu Gide Hugo Jung Kim Mariathasan PratMelanoma Cho
 
 ## set path
 input_path = file.path("../../data/CCN_construction/2_CIBERSORTx_output", dataset)
