@@ -41,6 +41,11 @@ This is source code for constructing cell-cell communication networks using pati
 
       # generate patient-specific cell-cell communication networks
       Rscript 4to5_CCN_extract_from_CellChatObj.R         # results will be stored in 5_CCN
+- output directory and files:
+      3_processed_celltype_gene_expression/"dataset"/ -> pre-processed cell type-specific gene expression profiles
+      4_Commprob_calculated_CellChatObj/"dataset"/ -> CellChat object of each sample containing communication probabilities. Saved as "sampleName"_CellChatobj.RData
+      5_CCN/"dataset"/ -> cell-cell communication networks of each sample, divided into responders and non-responders. 
+
 
 ### 2. Response prediction using CCN
 - input: communication strength between cells of each patient (i.e. CCN)
@@ -50,6 +55,10 @@ This is source code for constructing cell-cell communication networks using pati
 
       cd CCN_immunotherapy/code/ML
       python main.py
+- output directory and files:
+      ML/"dataset"/perf_"dataset".txt -> predictive performances of the CCN-based ML model
+      ML/"dataset"/result_"dataset".txt -> predictive probabilities of each sample by CCN-based ML model
+      ML/"dataset"/CCNweight_"dataset".txt -> feature weights
 
 ## Example dataset
 Jung et al., 2019, Nat. Commun. 10, 4278.
