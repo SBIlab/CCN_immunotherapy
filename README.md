@@ -25,7 +25,7 @@ This is source code for constructing cell-cell communication networks using pati
 
 ## Usage with examples
 ### 1. Construction of cell-cell communication networks
-- **pre-requirement: cell type-specific gene expression profiles should be prepared before running and store under ./data/CCN_construction/2_CIBERSORTx_output/"dataset"/
+- **pre-requirement: cell type-specific gene expression profiles should be prepared before running these codes and store under ./data/CCN_construction/2_CIBERSORTx_output/"dataset"/
 - input: cell type-specific gene expression profiles
 - To construct CCN of each patient, run R codes deposited in ./code/CCN_construction (setting dataset variable at the beginning of each code)
 - CCN will be stored under ./data/CCN_construction/5_CCN/"dataset"/
