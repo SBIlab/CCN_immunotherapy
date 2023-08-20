@@ -8,7 +8,7 @@ exec(open("./function/Control_DataLoader.py").read())
 exec(open("./function/ML.py").read())
 
 ## options
-dataset = "VanAllen"  # VanAllen Liu Gide Hugo Jung Kim Mariathasan
+dataset = "Jung"
 result_dir = "../../result/ML/" + dataset + "/"
 if not os.path.exists(result_dir):
     os.mkdir(result_dir)
