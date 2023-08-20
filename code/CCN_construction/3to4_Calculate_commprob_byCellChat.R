@@ -1,4 +1,3 @@
-setwd("working directory")
 library(dplyr)
 library(Matrix)
 source("./CellChat-master/R/CellChat_class.R")
