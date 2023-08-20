@@ -34,14 +34,14 @@ This is source code for constructing cell-cell communication networks using pati
 - example dataset: Jung et al., 2019, Nat. Commun. 10, 4278.
   
     cd code/CCN_construction
-    # preprocessing cell type-specific gene expression profiles
-    Rscript 2to3_Processing_CIBERSORTxOutput_todo_CellChat.R    # results will be stored in 3_processed_celltype_gene_expression
+    preprocessing cell type-specific gene expression profiles
+    Rscript 2to3_Processing_CIBERSORTxOutput_todo_CellChat.R
 
-    # calculate communication strength (i.e. communication probabilities)
-    Rscript 3to4_Calculate_commprob_byCellChat.R                # results will be stored in 4_Commprob_calculated_CellChatObj
+    calculate communication strength (i.e. communication probabilities)
+    Rscript 3to4_Calculate_commprob_byCellChat.Rresults will be stored in 4_Commprob_calculated_CellChatObj
 
-    # generate patient-specific cell-cell communication networks
-    Rscript 4to5_CCN_extract_from_CellChatObj.R                 # results will be stored in 5_CCN
+    generate patient-specific cell-cell communication networks
+    Rscript 4to5_CCN_extract_from_CellChatObj.Rresults will be stored in 5_CCN
 
 2. Response prediction using CCN
 - input: communication strength between cells of each patient (i.e. CCN)
