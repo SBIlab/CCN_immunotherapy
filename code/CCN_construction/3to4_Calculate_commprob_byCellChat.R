@@ -14,7 +14,7 @@ dataset = "Jung"
 input_path = file.path("../../data/CCN_construction/3_processed_celltype_gene_expression", dataset)
 output_path = file.path("../../data/CCN_construction/4_Commprob_calculated_CellChatObj", dataset)
 if(!file.exists(output_path))
-  dir.create(output_path)
+  dir.create(output_path, recursive = TRUE)
 
 ## load cell type GEP file names and define cell types
 deconv_filelist = list.files(path = input_path, recursive = FALSE, pattern = "CIBERSORTxHiRes")
