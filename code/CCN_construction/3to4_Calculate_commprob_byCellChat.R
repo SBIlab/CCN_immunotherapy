@@ -9,7 +9,7 @@ source("./CellChat-master/R/database.R")
 source("./CellChat-master/R/visualization.R")
 
 ## set dataset
-dataset = "Cho"  # VanAllen Liu Gide Hugo Jung Kim Mariathasan PratMelanoma Cho
+dataset = "Jung"
 
 ## set path
 input_path = file.path("../../data/CCN_construction/3_processed_celltype_gene_expression", dataset)
