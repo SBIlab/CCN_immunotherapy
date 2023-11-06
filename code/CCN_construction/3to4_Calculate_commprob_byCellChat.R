@@ -34,8 +34,10 @@ patient = colnames(cell_type_expList[[i]])[2:ncol(cell_type_expList[[i]])]
 message(paste0("Number of patients: ", length(patient)))
 
 ## CellChat DB load
-load("/home/ljh621/cell-cell_communication/R_code/CellChat-master/data/CellChatDB.human.rda")
-load("/home/ljh621/cell-cell_communication/R_code/CellChat-master/data/PPI.human.rda")
+#load("/home/ljh621/cell-cell_communication/R_code/CellChat-master/data/CellChatDB.human.rda")
+load("./CellChat-master/data/CellChatDB.human.rda")
+#load("/home/ljh621/cell-cell_communication/R_code/CellChat-master/data/PPI.human.rda")
+load("./CellChat-master/data/PPI.human.rda")
 message("CellChat DB load")
 
 ## Calculate communication probabilities of each patient and integrate into comm. pathway
