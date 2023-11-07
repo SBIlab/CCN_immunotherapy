@@ -17,6 +17,7 @@ This is source code for constructing cell-cell communication networks using pati
 - numpy (v 1.19.2)
 - sklearn (v. 0.24.2)
 - scipy (v 1.5.2)
+- statsmodels (v. 0.12.2)
 
 ## Installation
 
