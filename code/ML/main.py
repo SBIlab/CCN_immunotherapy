@@ -11,7 +11,7 @@ exec(open("./function/ML.py").read())
 dataset = "Jung"
 result_dir = "../../result/ML/" + dataset + "/"
 if not os.path.exists(result_dir):
-    os.mkdir(result_dir)
+    os.makedirs(result_dir)
     
 gene_num = 3000
 qval = 0.05
