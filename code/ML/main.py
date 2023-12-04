@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import glob
 import os
 import itertools
 exec(open("./function/DataLoader.py").read())
