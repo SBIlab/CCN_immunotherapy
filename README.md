@@ -7,10 +7,11 @@ For overall processes of constructing cell-cell communication networks (CCN) and
 Before running codes, below packages should be installed.
 ### R
 - R (v 4.0.2 or higher)
-- preprocessCore (v 1.52.1 or higher)
-- CellChat (v 1.1.0) (Or alternative packages: future (v 1.33.0 or higher) and pbapply (v 1.7.2 or higher)
 - dplyr (v 1.0.10 or higher)
+- preprocessCore (v 1.52.1 or higher)
 - Matrix (v 1.5.1 or higher)
+- future (v 1.33.0 or higher) (or CellChat v 1.1.0)
+- pbapply (v 1.7.2 or higher) (or CellChat v 1.1.0)
 - reticulate (v. 1.26 or higher)
 
 
@@ -20,8 +21,8 @@ For installing R packages
       install.packages("BiocManager", repos = "https://cloud.r-project.org")    ## to install bioconductor package "preprocessCore"
       BiocManager::install("preprocessCore") 
       install.packages("Matrix", repos = "https://cloud.r-project.org")
-      install.packages("future", repos = "https://cloud.r-project.org")      ## if you have CellChat v 1.1.0, no need to install this package
-      install.packages("pbapply", repos = "https://cloud.r-project.org")     ## if you have CellChat v 1.1.0, no need to install this package
+      install.packages("future", repos = "https://cloud.r-project.org")      ## if you installed CellChat v 1.1.0, no need to install this package
+      install.packages("pbapply", repos = "https://cloud.r-project.org")     ## if you installed CellChat v 1.1.0, no need to install this package
       install.packages("reticulate", repos = "https://cloud.r-project.org") 
 
 if you encounter below error during running "Rscript 2to3_Processing_CIBERSORTxOutput_todo_CellChat.R"
