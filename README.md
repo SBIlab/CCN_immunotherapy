@@ -6,13 +6,13 @@ This is source code for constructing cell-cell communication networks using pati
 For overall processes of constructing cell-cell communication networks (CCN) and response prediction using CCN, both R and python packages, described below, are required.
 Before running codes, below packages should be installed.
 ### R
-- R (v 4.0.2 or higher)
-- dplyr (v 1.0.10 or higher)
-- preprocessCore (v 1.52.1 or higher)
-- Matrix (v 1.5.1 or higher)
-- future (v 1.33.0 or higher) (or CellChat v 1.1.0)
-- pbapply (v 1.7.2 or higher) (or CellChat v 1.1.0)
-- reticulate (v. 1.26 or higher)
+- R (v 4.0.2 or higher version)
+- dplyr (v 1.0.10 or higher version)
+- preprocessCore (v 1.52.1 or higher version)
+- Matrix (v 1.5.1 or higher version)
+- future (v 1.33.0 or higher version) (or CellChat v 1.1.0)
+- pbapply (v 1.7.2 or higher version) (or CellChat v 1.1.0)
+- reticulate (v. 1.26 or higher version)
 
 
 For installing R packages
