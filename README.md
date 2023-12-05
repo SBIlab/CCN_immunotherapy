@@ -15,7 +15,7 @@ Before running codes, below packages should be installed.
 - reticulate (v. 1.26 or higher version)
 
 
-For installing R packages
+For installing R packages in R console,
 
       install.packages("dplyr", repos = "https://cloud.r-project.org")
       install.packages("BiocManager", repos = "https://cloud.r-project.org")    ## to install bioconductor package "preprocessCore"
