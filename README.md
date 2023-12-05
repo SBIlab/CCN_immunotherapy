@@ -13,6 +13,7 @@ Before running codes, below packages should be installed.
 - Matrix (v 1.5.1 or higher)
 - reticulate (v. 1.26 or higher)
 
+
 For installing R packages
 
       install.packages("dplyr", repos = "https://cloud.r-project.org")
@@ -40,6 +41,8 @@ Then, install package "preprocessCore" again, as shown below
 - sklearn (v. 0.24.2)
 - scipy (v 1.5.2)
 - statsmodels (v. 0.12.2)
+
+
 For installing python modules using Anaconda
 
       conda install pandas=1.1.5     ## numpy is also installed during this step
