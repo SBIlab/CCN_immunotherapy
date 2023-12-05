@@ -3,21 +3,53 @@
 This is source code for constructing cell-cell communication networks using patient's bulk tumor transcriptome and prediction of patient response to immune checkpoint inhibitors (ICIs) using the patient's cell-cell communication network (CCN)
 
 ## Packages required
-1. construction of CCN
-- R (v 4.0.2)
-- preprocessCore (v 1.52.1)
-- CellChat (v 1.1.0)
-- dplyr (v 1.0.10)
-- Matrix (v 1.5.1)
-- reticulate (v. 1.26)
+For overall processes of constructing cell-cell communication networks (CCN) and response prediction using CCN, both R and python packages, described below, are required.
+Before starting running codes, below packages should be installed.
+### R
+- R (v 4.0.2 or higher)
+- preprocessCore (v 1.52.1 or higher)
+- CellChat (v 1.1.0) (Or alternative packages: future (v 1.33.0 or higher) and pbapply (v 1.7.2 or higher)
+- dplyr (v 1.0.10 or higher)
+- Matrix (v 1.5.1 or higher)
+- reticulate (v. 1.26 or higher)
+For installing R packages
 
-2. response prediction using CCN
+      install.packages("dplyr", repos = "https://cloud.r-project.org")
+      install.packages("BiocManager", repos = "https://cloud.r-project.org")    ## to install bioconductor package "preprocessCore"
+      BiocManager::install("preprocessCore") 
+      install.packages("Matrix", repos = "https://cloud.r-project.org")
+      install.packages("future", repos = "https://cloud.r-project.org")      ## if you have CellChat v 1.1.0, no need to install this package
+      install.packages("pbapply", repos = "https://cloud.r-project.org")     ## if you have CellChat v 1.1.0, no need to install this package
+      install.packages("reticulate", repos = "https://cloud.r-project.org") 
+
+if you encounter below error during running "Rscript 2to3_Processing_CIBERSORTxOutput_todo_CellChat.R"
+    
+    Error in normalize.quantiles(as.matrix(exp_df), copy = FALSE) :  
+    ERROR; return code from pthread_create() is 22 
+    Calls: %>% -> as.data.frame -> normalize.quantiles 
+    Execution halted 
+Then, install package "preprocessCore" again, as shown below
+
+    BiocManager::install("preprocessCore", configure.args = c(preprocessCore = "--disable-threading"), force= TRUE, update=TRUE, type = "source")
+
+### python
 - python (v 3.6.13)
 - pandas (v 1.1.5)
 - numpy (v 1.19.2)
 - sklearn (v. 0.24.2)
 - scipy (v 1.5.2)
 - statsmodels (v. 0.12.2)
+For installing python modules using Anaconda
+
+      conda install pandas=1.1.5     ## numpy is also installed during this step
+      conda install scikit-learn=0.24.2    ## scipy is also installed during this step
+      conda install statsmodels=0.12.2
+Or using pip
+
+    pip install pandas==1.1.5        ## numpy is also installed during this step
+    pip install scikit-learn==0.24.2    ## scipy is also installed during this step
+    pip install statsmodels==0.12.2 
+      
 
 ## Installation
 
