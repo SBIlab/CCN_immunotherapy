@@ -3,8 +3,17 @@
 This is source code for constructing cell-cell communication networks using patient's bulk tumor transcriptome and prediction of patient response to immune checkpoint inhibitors (ICIs) using the patient's cell-cell communication network (CCN)
 
 ## Packages required
+We recommend users to utilize conda environment to easily manage some issues caused by software version. (refer to: https://www.anaconda.com/download)
+R (v 4.0.2) and python (v 3.6.13) were used to develop for constructing cell-cell communication networks (CCN) and prediction of patient response to ICIs using CCN.
+The working environment can be set up as follows (if conda environments was utilized):
+
+      (base) conda create -n CCN python=3.6.13
+      (base) conda activate CCN
+      (CCN) conda install -c conda-forge r-base=4.0.2
+
 For overall processes of constructing cell-cell communication networks (CCN) and response prediction using CCN, both R and python packages, described below, are required.
 Before running codes, below packages should be installed.
+
 ### R
 - R (v 4.0.2)
 - dplyr (v 1.0.10)
