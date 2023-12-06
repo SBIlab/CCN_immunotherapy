@@ -7,9 +7,9 @@ We recommend users to utilize conda environment to easily manage some issues cau
 R (v 4.0.2) and python (v 3.6.13) were used to develop for constructing cell-cell communication networks (CCN) and prediction of patient response to ICIs using CCN.
 The working environment can be set up as follows (if conda environments was utilized):
 
-      (base) conda create -n CCN python=3.6.13
-      (base) conda activate CCN
-      (CCN) conda install -c conda-forge r-base=4.0.2
+      (base) conda create -n CCN python=3.6.13            ## create python v 3.6.13 environment, named CCN
+      (base) conda activate CCN                           ## activate the environment
+      (CCN) conda install -c conda-forge r-base=4.0.2     ## install R v 4.0.2 in the environment
 
 For overall processes of constructing cell-cell communication networks (CCN) and response prediction using CCN, both R and python packages, described below, are required.
 Before running codes, below packages should be installed.
