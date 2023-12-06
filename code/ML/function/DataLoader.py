@@ -142,7 +142,6 @@ def load_CCN(dataset, gene_num, p_cut_off, standardize="StandardScaler", Network
         CCN = CCN.loc[:, column_list]
     
     print(dataset + " CCN loaded: ")
-    print(CCN.shape)
 
     return CCN
 
