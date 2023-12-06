@@ -5,7 +5,7 @@ This is source code for constructing cell-cell communication networks using pati
 ## Packages required
 We recommend users to utilize conda environment to easily manage some issues caused by software version (refer to: https://www.anaconda.com/download). 
 R (v 4.0.2) and python (v 3.6.13) were used to develop for constructing cell-cell communication networks (CCN) and prediction of patient response to ICIs using CCN.
-The working environment can be set up as follows (if conda environments was utilized):
+The working environment can be set up as follows (if conda environment was utilized):
 
       (base) conda create -n CCN python=3.6.13            ## create python v 3.6.13 environment whose name is CCN
       (base) conda activate CCN                           ## activate the environment
